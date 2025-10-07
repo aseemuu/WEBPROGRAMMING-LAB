@@ -1,0 +1,95 @@
+<html>
+<head>
+
+<style>
+h1 {
+    text-align:center;
+   }
+.bold-text { 
+            font-weight:bold;
+           }
+.required::after {
+                  content:"*";
+                  color:red;
+                  font-size:20px;
+                 }
+.bgcolor {
+          background-color:lightblue;
+         }
+.center{ margin:auto;
+    width:20%;
+    padding:10px;
+    }         
+
+</style>
+<title>Registration</title>
+<body>
+<h1>Registration Form</h1>
+<form>
+<fieldset class="bgcolor">
+
+      <legend class="bold-text">User Information</legend>
+
+        <label for="name" class="required" >Name:</label> &nbsp;
+        <select name="title">
+        <option value="title">Mr.</option>
+        <option value="title">Mrs.</option>
+        </select> &nbsp;
+        <input type="text" id="name" placeholder="Enter Name"required>
+
+<br><br>
+
+        
+
+<br><br>
+
+         <label for="mobno" class="required"> Mob No. </label> &nbsp;
+         <input type="tel" id="mobno" name="mobno" placeholder="Enter mobile number"required>
+
+<br><br>
+
+
+         <label for="mail" class="required"> Email Id: </label> &nbsp;
+         <input type="mail" id="mail" name="mail" placeholder="Enter Email Id"required>
+      </fieldset>
+
+
+<br>
+<hr>
+
+<label for="address">  Address: </label> &nbsp;
+<textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your Address"required></textarea> &nbsp;
+
+
+<br>
+        <label for="gender">Gender:</label> &nbsp;  
+         <input type="radio" id="Male" name="gender"required><label for="Male">Male</label> &nbsp; 
+         
+         
+                                           
+           <input type="radio" id="Female" name="gender"><label for="Female"required>Female</label> &nbsp;
+         <input type="radio" id="Other" name="gender"><label for="Other"required>Other</label>
+         <br>
+         <label for="language">language:</label> &nbsp;  
+         <input type="radio" id="malayalam," name="language"><label for="Male"required>Malayalam</label> &nbsp;                                   
+         <input type="radio" id="english" name="language"><label for="Female"required>english</label> &nbsp;
+         <input type="radio" id="hindi" name="language"><label for="Other"required>hindi</label>
+         <br>
+         <label>course</label>
+         <select name= "course">
+         <option value="course">bca</option>
+         <option value="course">mca</option>
+         <option value="course">bcom</option>
+         <option value="course">mcom</option>
+         </select>
+         <br>
+         <br>
+         <br>
+         <div class="center">
+<button type="reset" >reset</button>
+<button type="submit">submit</button>
+</div>
+</form>
+</body>
+</html>
+
